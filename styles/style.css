@@ -1,0 +1,189 @@
+
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: url("../fonts/Ubuntu-Regular.eot");
+  src: url("../fonts/Ubuntu-Regular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/Ubuntu-Regular.woff") format("woff"),
+  url("../fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Ubuntu-Light";
+  src: url("../fonts/Ubuntu-Light.eot");
+  src: url("../fonts/Ubuntu-Light.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/Ubuntu-Light.woff") format("woff"),
+  url("../fonts/Ubuntu-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Ubuntu-Medium";
+  src: url("../fonts/Ubuntu-Medium.eot");
+  src: url("../fonts/Ubuntu-Medium.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/Ubuntu-Medium.woff") format("woff"),
+  url("../fonts/Ubuntu-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.wrapper {
+	display: flex;
+  flex-direction: column;
+  font-family: Medium
+}
+.header {
+  
+}
+
+.header__up-mobile {
+  display: flex;
+  min-height: 95px;
+  font-size: 30px;
+  font-family: "Ubuntu-Regular";
+  color: #ffffff;
+  background-color: #000000;
+}
+.header__up-text {
+  margin: auto;
+  margin-left: 5%;
+}
+.header__up-currency {
+  display: flex;
+  flex-grow: 8;
+
+  text-transform: uppercase;
+}
+.header__up-сelection {
+  display: flex;
+  flex-grow: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+  content: "";
+  border: 10px solid transparent;
+  border-top: 10px solid #ffffff;
+}
+
+.header__up-logo {
+  display: flex;
+  flex-grow: 2;
+  justify-content: flex-end;
+  color: #444444;
+}
+.header__up-mobile .header__up-logo {
+  flex-grow: 7;
+  border-left: 3px solid #444444;
+}
+.header__up-logo-img {
+  margin: auto 0 auto ;
+}
+.header__up-login {
+  display: flex;
+  flex-grow: 30;
+  text-transform: uppercase;
+  border-right: 3px solid #444444;
+
+}
+.header__up-search {
+  display: flex;
+  flex-grow: 10;
+
+
+}
+.header__up-search-img {
+  margin: auto;
+}
+.header__up-planshet {
+  display: none;
+}
+
+
+
+
+.nav {
+  background-color: blue;
+	min-height: 50px;
+}
+.email {
+	background-color: green;
+	min-height: 50px;
+}
+.lookbook {
+	background-color: yellow;
+  min-height: 50px;
+  display: none;
+}
+.best {
+	background-color: pink;
+	min-height: 50px;
+}
+.special {
+	background-color: orange;
+	min-height: 50px;
+}
+.brands {
+	background-color: brown;
+  min-height: 50px;
+  display: none;
+}
+.instagram {
+	background-color: royalblue;
+  min-height: 50px;
+  display: none;
+}
+.follow {
+	background-color: grey;
+	min-height: 50px;
+}
+.footer {
+  background-color: black;
+	min-height: 50px;
+}
+@media screen and (min-width: 640px) {
+  
+  .header__up-mobile {
+    display: none;
+  }
+  .header__up-planshet {
+    display: flex;
+    min-height: 30px;
+    font-size: 11px;
+    font-family: "Ubuntu-Regular";
+    color: #ffffff;
+    background-color: #000000;
+  }
+  .header__up-shipping {
+    display: flex;
+    flex-grow: 17;
+  }
+  .header__up-quality {
+    display: flex;
+    flex-grow: 55;
+    justify-content: flex-start;
+  }
+ 
+  .header__up-phone {
+    display: flex;
+    flex-grow:5;
+  }
+
+
+
+
+
+
+
+
+  .brands {
+    display: block;
+  }
+  .instagram {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__up-planshet {
+    justify-content: space-around;
+  }
+}
