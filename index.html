@@ -13,29 +13,37 @@
 			<header class="header">
         <div class="header__up-mobile">
           <div class="header__up-currency"><span class="header__up-text">$ us</span></div>
-          <div class="header__up-сelection"></div>
-          <div class="header__up-logo"><span class="header__up-logo-img"><img src="img/logo.png" alt="logo" title="logo"></span></div>
+          <a href="#" class="header__up-сelection"></a>
+          <div class="header__up-logo"><img  class="header__up-logo-img" src="img/logo.png" alt="logo" title="logo"></div>
           <div class="header__up-login"><span class="header__up-text">login</span></div>
-          <div class="header__up-search"><span class="header__up-search-img"><img src="img/loup.png" alt="search" title="search"></span></div>
+          <div class="header__up-search"><img class="header__up-search-img" src="img/loup.png" alt="search" title="search"></div>
         </div>
         <div class="header__up-planshet">
-          <div class="header__up-logo"><span class="header__up-logo-img"><img src="img/shipping.png" alt="logo" title="logo"></span></div>
+          <div class="header__up-logo"><img class="header__up-logo-img" src="img/shipping.png" alt="logo" title="logo"></div>
           <div class="header__up-shipping"><span class="header__up-text">free shipping</span></div>
-          <div class="header__up-logo"><span class="header__up-logo-img"><img src="img/quality.png" alt="logo" title="logo"></span></div>
+          <div class="header__up-logo"><img class="header__up-logo-img" src="img/quality.png" alt="logo" title="logo"></div>
           <div class="header__up-quality"><span class="header__up-text">100% original products</span></div>
-          <div class="header__up-logo"><span class="header__up-logo-img"><img src="img/phone.png" alt="phone" title="phone"></span></div>
+          <div class="header__up-logo"><img class="header__up-logo-img" src="img/phone.png" alt="phone" title="phone"></div>
           <div class="header__up-phone"><span class="header__up-text">call us: 020 7848 3510</span></div>
         </div>
-        <div class="header__login-button"></div>
+        <div class="header__login-buttons">
+          <a class="header__login-button" href="#"><span class="">login</span></a>
+          <a class="header__login-button" href="#"><span class="">register</span></a>
+        </div>
         <div class="header__logo">
           <p class="header__logo-name"><span class="header__logo-firstname">dreamy</span><br>
            online store</p>
         </div>
-				<div class="header__card">
-          
+				<div class="header__cart">
+          <div class="header__cart-logo"><img class="header__cart-logo-img" src="img/basket.png" alt="basket" title="basket"></div>
+          <div class="header__cart-ballance"><span class="header__cart-text">My Cart (0) : $0</span></div>
+          <a class="header__cart-button" href="#"><span>checkout</span></a>
+          <div class="header__cart-search"><span class="header__cart-search-text">Search</span><img class="header__cart-search-img" src="img/loup.png" alt="search" title="search"></div>
         </div>
 			</header>	
-			<nav clfss="nav"></nav>
+			<nav class="main-nav__wrapper">
+        
+      </nav>
 			<div class="email"></div>
 			<div class="lookbook">lookbook</div>
 			<div class="best"></div>
@@ -45,6 +53,21 @@
 			<div class="follow"></div>
 			<footer class="footer"></footer>
     </div>
-    
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>  
   </body>
 </html>

@@ -53,7 +53,6 @@
 .header__up-currency {
   display: flex;
   flex-grow: 8;
-
   text-transform: uppercase;
 }
 .header__up-сelection {
@@ -61,7 +60,6 @@
   flex-grow: 1;
   margin-top: auto;
   margin-bottom: auto;
-  
   content: "";
   border: 10px solid transparent;
   border-top: 10px solid #ffffff;
@@ -101,10 +99,11 @@
   display: none;
 }
 
-.header__login-button {
+.header__login-buttons {
   display: none;
   background-color: red;
   min-height: 50px;
+  
 }
 .header__logo {
   display: flex;
@@ -124,11 +123,53 @@
 
 
 
-.header__card {
+.header__cart {
+  display: flex;
   width: 100%;
+  padding: 0 2%;
   background-color: purple;
   min-height: 50px;
 }
+.header__cart-logo {
+  display: flex;
+  flex-grow: 5;
+  background-color: lightgreen;
+  min-height: 50px;
+}
+.header__cart-logo-img {
+  margin: auto 0 auto 5%;
+}
+.header__cart-ballance {
+  display: flex;
+  flex-grow: 75;
+  background-color: pink;
+  min-height: 50px;
+}
+.header__cart-text {
+  margin: auto 0;
+}
+.header__cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  flex-grow: 45;
+  background-color: #0000ff;
+  min-height: 50px;
+  padding: auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+.header__cart-search {
+  display: none;
+}
+
+
+
+
+
+
 
 
 .nav {
@@ -198,9 +239,43 @@
     display: flex;
     flex-grow:5;
   }
-  .header__login-button {
-    display: block;
+  .header__login-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 30%;
+    text-transform: uppercase;
+    text-align: center;
   }
+  .header__login-button {
+    margin: 1% 27%;
+    padding: 3% 1%;
+    flex-basis: 100%;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid black;
+
+  }
+  .header__logo {
+    width: 30%;
+    
+  }
+  .header__cart {
+    width: 36%; 
+    flex-wrap: wrap; 
+    flex-grow: 1;
+    
+  }
+  .header__cart-search {
+    display: flex;
+    width: 100%;
+  }
+  .header__cart-search-text {
+    margin: auto;
+    margin-left: 0;
+  }
+
 
 
 
@@ -222,5 +297,16 @@
     padding-left: 10%;
     padding-right: 10%;
 
+  }
+  .header__cart {
+    padding: 0 12% 0 2%;
+  }
+  .header__login-button {
+    margin: 1% 37%;
+    
+
+  }
+  .header__cart {
+    width: 26%; 
   }
 }
