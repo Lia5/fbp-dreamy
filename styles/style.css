@@ -34,6 +34,7 @@
 .header {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 30px;
   background-color: #fafafa;
 }
 
@@ -41,6 +42,7 @@
   display: flex;
   width: 100%;
   min-height: 95px;
+  margin-bottom: 50px;
   font-size: 30px;
   font-family: "Ubuntu-Regular";
   color: #ffffff;
@@ -101,8 +103,14 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 37px;
+  font-family: 'Ubuntu-Regular';
+  font-size: 28px;
   text-transform: uppercase;
   min-height: 50px;
+}
+.header__logo-firstname {
+  font-size: 50px;
 }
 .header__logo-name {
   margin: auto;
@@ -148,9 +156,8 @@
 
 .main-nav {
   position: relative;
-  width: 90%;
+  width: 96%;
   margin: 0 auto;
-  background-color: deepskyblue;
 	min-height: 50px;
   text-transform: uppercase;
 }
@@ -250,6 +257,9 @@
 .main-nav--closed .main-nav__item--active {
   display: block; 
 }
+.hidden {
+  display: none;
+}
 .main-nav--closed .main-nav__item--active a {
   padding-right: 70px;
   padding-right: 70px;
@@ -264,7 +274,8 @@
   left: 70px;
   z-index: 10;
   height: 80vh;
-  background-color: #6a4d38; }
+  /*background-color: #6a4d38; */
+}
 .main-nav--nojs .main-nav__toggle {
   display: none; 
 }
@@ -325,6 +336,9 @@
 	min-height: 50px;
 }
 @media screen and (min-width: 640px) {
+  .header {
+    margin-bottom: 20px;
+  }
   .header__up-mobile {
     display: none;
   }
@@ -332,6 +346,7 @@
     display: flex;
     width: 100%;
     min-height: 30px;
+    margin-bottom: 20px;
     font-size: 11px;
     font-family: "Ubuntu-Regular";
     color: #ffffff;
@@ -355,20 +370,20 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 30%;
+    width: 20%;
     text-transform: uppercase;
     text-align: center;
   }
   .header__login-button {
-    margin: 1% 27%;
-    padding: 3% 1%;
+    margin: 1% 11%;
+    padding: 8% 1%;
     flex-basis: 100%;
     text-decoration: none;
     color: #000000;
     border: 1px solid black;
   }
   .header__logo {
-    width: 30%;
+    width: 40%;
   }
   .header__cart {
     width: 36%; 
@@ -382,6 +397,12 @@
   .header__cart-search-text {
     margin: auto;
     margin-left: 0;
+  }
+  .header__cart-search-img{
+    display: flex;
+  }
+  .header__cart-search-img img{
+    margin: auto;
   }
 
 
@@ -409,11 +430,18 @@
   .header__cart {
     padding: 0 12% 0 2%;
   }
+  .header__login-buttons {
+    width: 30%;
+   }
   .header__login-button {
     margin: 1% 37%;
+    padding: 3% 1%;
   }
   .header__cart {
     width: 26%; 
+  }
+  .header__logo {
+    width: 30%;
   }
 
   .main-nav__toggle {
